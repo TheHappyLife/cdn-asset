@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Include External JavaScript</title>
+    <!-- Optionally include the script in the head for early loading -->
+    <!-- <script src="https://ed8171ea.use-cdn-test.pages.dev/test.js" defer></script> -->
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>This is a test page to include an external JavaScript file.</p>
+
+    <!-- Include the script at the end of the body for better performance -->
+    <script src="https://fceda17e.use-cdn-test.pages.dev/test_2.js"></script>
+    <script>
+      // Call the function after the script is loaded
+      window.onload = function () {
+        if (typeof myLog === "function") {
+          myLog("your input");
+        } else {
+          console.error("Function myLog is not defined");
+        }
+      };
+    </script>
+  </body>
+</html>
