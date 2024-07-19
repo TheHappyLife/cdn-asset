@@ -1,6 +1,6 @@
 {
   "abcxyz": {
-    "show": false,
+    "show": true,
     "className": "text-red-500"
   }
 }
