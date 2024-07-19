@@ -9,7 +9,7 @@ const translation = (key, store) => {
   }
 };
 
-const handelContent_ABCXYZ_id = (data, value) => {
+const handelContent_ABCXYZ_id = (value, data) => {
   return translation(value, data);
 };
 
