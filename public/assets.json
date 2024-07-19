@@ -2,6 +2,7 @@
   "abcxyz": {
     "show": true,
     "className": "text-red-500",
-    "handelContent": "handelContent_ABCXYZ_id"
+    "handelContent": "handelContent_ABCXYZ_id",
+    "onMounted": "onMounted_ABCXYZ_id"
   }
 }
