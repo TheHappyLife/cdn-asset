@@ -1,9 +1,16 @@
-const handelContent_ABCXYZ_id = (data) => {
-  console.log(
-    ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>The Data: ",
-    data.state
-  );
-  return "handelContent";
+const translation = (key, store) => {
+  try {
+    if (store.state.languageData && store.state.languageData[key]) {
+      return store.state.languageData[key];
+    } else return key;
+  } catch (err) {
+    console.error(err);
+    return key;
+  }
+};
+
+const handelContent_ABCXYZ_id = (data, value) => {
+  return translation(value, data);
 };
 
 const libraryFunctions = {
